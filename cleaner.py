@@ -5,7 +5,7 @@ A few lines of code which keep old and unused files away from your desktop forev
 
 Author:     Mohammad Abbas
 Github:     https://github.com/MohammadAbbas393/Downloads-folder-cleaner
-License:    Middlebury College
+College:    Middlebury college
 """
 import os
 import shutil
