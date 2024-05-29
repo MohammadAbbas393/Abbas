@@ -1,18 +1,16 @@
-This tool got created to organize your donwloads instead of being suffled it will arrange them under folders. 
+# Downloads Folder Cleaner
 
-To run this code you need to follow these steps:
+This tool organizes your downloads instead of being shuffled; it will arrange them under folders.
 
-1. # Activate your virtual environment
-source /your/path/to/the/file\ cleaner/.venv/bin/activate
+## Prerequisites
 
-2. # Install pystray
-pip install pystray
+- Python 3.x
+- Virtual environment (optional but recommended)
 
-3. # Run your script
-python /your/path/to/the/file\ cleaner/cleaner.py
+## Installation
 
+1. Clone the repository:
 
-To deactivate it and quit the files:
-
-1. # click on the icon up beside the control center.
-2. # go to your code and write in the terminal deactivate so you can exit the virtual environment
+   ```sh
+   git clone https://github.com/MohammadAbbas393/Downloads-folder-cleaner.git
+   cd Downloads-folder-cleaner
