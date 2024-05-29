@@ -4,7 +4,7 @@ Desktop Cleaner
 A few lines of code which keep old and unused files away from your desktop forever!
 
 Author:     Mohammad Abbas
-Github:     https://github.com/dsonyy/desktop-cleaner
+Github:     https://github.com/MohammadAbbas393/Downloads-folder-cleaner
 License:    Middlebury College
 """
 import os
