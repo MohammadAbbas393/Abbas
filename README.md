@@ -1,21 +1,42 @@
+
+### 1. README.md
+
+Create this file to provide an overview of your project, including installation, usage, configuration, and license information.
+
+```markdown
 # Downloads Folder Cleaner
 
-This tool organizes your downloads instead of being shuffled; it will arrange them under folders.
+A Python-based application to organize your Downloads folder by automatically moving files based on their extensions.
 
-## Prerequisites
-
-- Python 3.x
-- Virtual environment (optional but recommended)
+## Features
+- Automatically organizes files in the Downloads folder.
+- Customizable file extensions and destination folders.
+- Logs all actions for transparency.
+- System tray icon for easy access and notifications.
 
 ## Installation
 
 1. Clone the repository:
-
-   ```sh
+   ```bash
    git clone https://github.com/MohammadAbbas393/Downloads-folder-cleaner.git
-   cd Downloads-folder-cleaner
 
-2. python3 -m venv .venv
-source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+2. cd Downloads-folder-cleaner
 
-3. pip install -r requirements.txt
+3. python3 -m venv venv
+source venv/bin/activate  # On macOS and Linux
+
+4. pip install -r requirements.txt
+
+5. run the script
+ venv/bin/python cleaner.py
+
+
+
+### 2. requirements.txt
+
+Ensure this file lists all dependencies required for the project.
+
+```plaintext
+Pillow==9.3.0
+pystray==0.19.3
+
