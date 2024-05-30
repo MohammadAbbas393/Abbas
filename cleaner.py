@@ -1,7 +1,7 @@
 """
-Desktop Cleaner
+Downloads Cleaner
 
-A few lines of code which keep old and unused files away from your desktop forever!
+This code will help you to rearrange all your downloads folders to different categories
 
 Author:     Mohammad Abbas
 Github:     https://github.com/MohammadAbbas393/Downloads-folder-cleaner
@@ -11,7 +11,7 @@ import os
 import shutil
 import threading
 import logging
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 from time import time, sleep
 from pathlib import Path
 import pystray
@@ -30,7 +30,7 @@ downloads_path = str(Path.home() / "Downloads")
 
 # Configurations
 destination_file = downloads_path
-items_ignore = ["desktop_cleaner.log", "config.yaml", "icon.ico"]
+items_ignore = ["cleaner.log", "config.yaml", "icon.ico"]
 
 running = True
 trayicon = None
@@ -87,7 +87,7 @@ def get_used_time(item):
     """Get the latest timestamp of file access, modification, or creation."""
     return max(os.path.getatime(item), os.path.getctime(item), os.path.getmtime(item))
 
-def notify(message, title="Desktop Cleaner"):
+def notify(message, title="Downloads Cleaner"):
     """Send a notification with given message and title."""
     if trayicon:
         trayicon.notify(message, title=title)
@@ -124,7 +124,7 @@ def trayicon_init():
         icon = Image.open(icon_path)
 
     global trayicon
-    trayicon = pystray.Icon("Desktop Cleaner", icon, menu=pystray.Menu(
+    trayicon = pystray.Icon("Downloads Cleaner", icon, menu=pystray.Menu(
         item('Quit', quit_icon),
         item('Open Downloads', lambda: open_downloads())
     ))
@@ -139,6 +139,7 @@ def move_file(original, destination):
         logging.info(f"Moved {original} to {destination}")
     except Exception as e:
         logging.error(f"Failed to move {original} to {destination}: {e}")
+        raise
 
 def scan_directory(directory):
     """Scan the directory for files that meet the criteria for moving."""
@@ -184,13 +185,20 @@ def loop():
         sleep(REFRESH_RATE)  # Wait before the next scan cycle
     quit_icon()  # Quit the application once the loop is exited
 
+def thread_function():
+    try:
+        loop()
+    except Exception as e:
+        logging.critical("An error occurred in the background thread: {}".format(e))
+
+
 def main():
     """Main function to set up logging, start the tray icon and the scanning loop."""
-    logging.basicConfig(filename="desktop_cleaner.log", level=logging.INFO,
+    logging.basicConfig(filename="Downloads cleaner.log", level=logging.INFO,
                         format="%(asctime)s %(levelname)s: %(message)s")  # Includes timestamp
-    logging.info("Desktop Cleaner started.")
+    logging.info("Downloads Cleaner started.")
     ensure_directories()
-    thread = threading.Thread(target=loop)
+    thread = threading.Thread(target=thread_function)
     thread.start()
     trayicon_init()
     thread.join()
