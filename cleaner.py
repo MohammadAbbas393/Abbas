@@ -1,7 +1,7 @@
 """
 Downloads Cleaner
 
-This code will help you to rearrange all your downloads folders to different categories
+A few lines of code that keep old and unused files away from your Downloads folder forever!
 
 Author:     Mohammad Abbas
 Github:     https://github.com/MohammadAbbas393/Downloads-folder-cleaner
