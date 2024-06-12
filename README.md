@@ -66,6 +66,7 @@ To tackle this issue, I devised an algorithm to effectively organize folders whi
 5. Check your Downloads (output) category, and you will see all the organized folders.
 
 ### Demo
-[Watch the Cleaner Demo](https://github.com/MohammadAbbas393/Downloads-folder-cleaner/blob/main/cleaner.mov)
+https://github.com/MohammadAbbas393/Downloads-folder-cleaner/assets/171047105/5544a6e0-222d-4f43-bc54-b9c8595953cf
+
 
 
