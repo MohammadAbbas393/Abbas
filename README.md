@@ -1,5 +1,5 @@
 
-### 1. Downloads folder cleaner
+### Downloads folder cleaner
 
 Create this file to provide an overview of your project, including installation, usage, configuration, and license information.
 
@@ -36,7 +36,17 @@ source venv/bin/activate  # On macOS and Linux
 
 Ensure this file lists all dependencies required for the project.
 
-```plaintext
+plaintext
 Pillow==9.3.0
 pystray==0.19.3
 
+```
+
+### Project
+```
+This project is an interactive tool designed to help people organize their downloads folder and preview the results in a cleaner log to see exactly what has been moved. The code allows users to adjust multiple folders such as downloads, desktop, and documents. The trick here is that you need to change the input in the code to specify the category you want to fix. This project is different from others because it not only cleans your folders but also organizes them in the output. In the downloads folder, files are grouped into folders, and within these folders, there are subfolders.
+
+```
+### authors
+
+[@MohammadAbbas's](https://github.com/MohammadAbbas393/)
