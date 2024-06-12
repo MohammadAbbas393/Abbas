@@ -3,7 +3,7 @@
 
 Create this file to provide an overview of your project, including installation, usage, configuration, and license information.
 
-```markdown
+```
 # Downloads Folder Cleaner
 
 A Python-based application to organize your Downloads folder by automatically moving files based on their extensions.
@@ -30,12 +30,13 @@ source venv/bin/activate  # On macOS and Linux
 5. run the script
  venv/bin/python cleaner.py
 
+```
 
-
-### 2. requirements.txt
+###  requirements.txt
 
 Ensure this file lists all dependencies required for the project.
 
+```
 plaintext
 Pillow==9.3.0
 pystray==0.19.3
@@ -49,4 +50,10 @@ This project is an interactive tool designed to help people organize their downl
 ```
 ### authors
 
-[@MohammadAbbas's](https://github.com/MohammadAbbas393/)
+[@Mohammad Abbas](https://github.com/MohammadAbbas393/)
+
+### Introduction 
+
+As a passionate coder and intern at multiple ITS departments at Middlebury College, including Helpdesk, Digital Learning and Inquiry, and Endpoint Collaboration Services, I develop projects aimed at assisting people. One common issue I observed among clients is disorganized desktop and downloads files. Despite the negative impact it has on computer aesthetics and the time wasted searching for documents, this problem can be easily solved, benefiting users by organizing their folders.
+
+To tackle this issue, I devised an algorithm to effectively organize folders while retaining crucial organizational details. Unlike conventional apps that simply dump files into one folder, my algorithm categorizes files into different folders, each containing specific subfolders for various types of unorganized content identified in the input of the code. The algorithm maintains the same folder structure but optimizes it for better visibility, detail, and time-saving purposes.
