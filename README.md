@@ -76,6 +76,8 @@ This project utilizes Python's os and shutil libraries to automate the process o
 
 The script successfully categorized and moved over 200 files during testing, reducing clutter and improving file retrieval times. See the attached results screenshot for a before and after comparison of the Downloads folder.
 
+![result](https://github.com/MohammadAbbas393/Downloads-folder-cleaner/blob/50c008830e575e3f0bcf81142c7923c90625cbe4/results.png)
+
 ## Issues
 
 1. Limited to certain file extensions; new types require manual updating of the script.
@@ -87,6 +89,7 @@ The script successfully categorized and moved over 200 files during testing, red
 1. Automatic detection of new file types and dynamic folder creation.
 2. Implementing a user interface to allow non-technical users to customize settings without editing code.
 3. Adding support for duplicate file handling by renaming instead of overwriting.
+
 
 
 
