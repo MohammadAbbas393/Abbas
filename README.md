@@ -68,5 +68,28 @@ To tackle this issue, I devised an algorithm to effectively organize folders whi
 ### Demo
 https://github.com/MohammadAbbas393/Downloads-folder-cleaner/assets/171047105/5544a6e0-222d-4f43-bc54-b9c8595953cf
 
+## Methods
+
+This project utilizes Python's os and shutil libraries to automate the process of sorting files in the Downloads folder based on their file extensions. The key method involves scanning the directory, identifying file types, and then moving them into pre-defined category folders, ensuring each file type has a corresponding subfolder.
+
+## Results
+
+The script successfully categorized and moved over 200 files during testing, reducing clutter and improving file retrieval times. See the attached results screenshot for a before and after comparison of the Downloads folder.
+
+## Issues
+
+1. Limited to certain file extensions; new types require manual updating of the script.
+2. Does not handle duplicate file names in the destination directory, leading to overwrites.
+
+
+## Improvements
+
+1. Automatic detection of new file types and dynamic folder creation.
+2. Implementing a user interface to allow non-technical users to customize settings without editing code.
+3. Adding support for duplicate file handling by renaming instead of overwriting.
+
+
+
+
 
 
