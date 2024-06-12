@@ -67,3 +67,4 @@ To tackle this issue, I devised an algorithm to effectively organize folders whi
 
 ### Demo
 
+![Cleaner Movie](https://github.com/MohammadAbbas393/Downloads-folder-cleaner/raw/main/cleaner.mov)
